@@ -15,7 +15,7 @@ public class Main {
         System.out.println("размер hashmap: " + myHashMap.size());
         myHashMap.replace(5, 65);
         System.out.println(myHashMap);
-        myHashMap.replace(13, 65);
+        myHashMap.replace(20, 65);
         System.out.println(myHashMap);
     }
 }

@@ -12,14 +12,17 @@ public class MyHashMap<K, V> {
         int hash = key.hashCode() % SIZE;
         Node<K, V> kvNode = bundles[hash];
         if (kvNode == null) {
+            System.out.println("Ключ не найден");
             return;
         }
         while (kvNode != null) {
             if (kvNode.getKey() == key) {
                 kvNode.setValue(value);
+                return;
             }
             kvNode = kvNode.getNext();
         }
+        System.out.println("Ключ не найден");
     }
 
     public boolean containsKey(K key) {
